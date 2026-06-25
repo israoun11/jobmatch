@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.about-jobs-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 60px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc; 
+}
+
+
+.about-jobs-container .left-content {
+    flex: 1;
+}
+
+.about-jobs-container .sub-title {
+    color: #3b5998;
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.about-jobs-container .main-title {
+    color: #0f172a;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 35px;
+}
+
+.about-jobs-container .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-jobs-container .features-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #475569;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.about-jobs-container .check-icon {
+    width: 22px;
+    height: 22px;
+    background-color: #15274e;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 4px;
+    flex-shrink: 0;
+}
+
+.about-jobs-container .steps-grid {
+    flex: 1.4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.about-jobs-container .step-card {
+    position: relative;
+    border-radius: 16px;
+    padding: 35px 25px;
+    color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-jobs-container .step-card:hover {
+    transform: translateY(-6px);
+}
+
+.about-jobs-container .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.about-jobs-container .icon-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 14px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    flex-shrink: 0;
+}
+
+.about-jobs-container .card-text h3 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.about-jobs-container .card-text p {
+    font-size: 13px;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+
+.about-jobs-container .step-number {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 68px;
+    font-weight: 700;
+    opacity: 0.12;
+    line-height: 1;
+    pointer-events: none;
+    font-family: Arial, sans-serif;
+}
+
+
+.about-jobs-container .card-blue { background-color: #7dd3fc; }
+.about-jobs-container .card-blue .icon-box { color: #495577; }
+
+.about-jobs-container .card-brown { background-color: #f7b3bf; }
+.about-jobs-container .card-brown .icon-box { color: #e253ab; }
+
+.about-jobs-container .card-purple { background-color: #cb9cf1; }
+.about-jobs-container .card-purple .icon-box { color: #6b21a8; }
+
+.about-jobs-container .card-teal { background-color: #61b9b2; }
+.about-jobs-container .card-teal .icon-box { color: #0f766e; }
+
+
+@media (max-width: 786px) {
+    .about-jobs-container {
+        flex-direction: column;
+        gap: 45px;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .about-jobs-container .left-content {
+        width: 100%;
+    }
+
+    .about-jobs-container .main-title {
+        font-size: 34px;
+    }
+
+    .about-jobs-container .features-list {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .about-jobs-container .steps-grid {
+        width: 100%;
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+}

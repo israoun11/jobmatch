@@ -1,0 +1,321 @@
+
+.profile-page-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    color: #1e293b;
+}
+
+/* هيدر التنقل */
+.profile-top-navigation {
+    margin-bottom: 24px;
+}
+
+.back-btn-classic {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.back-btn-classic:hover {
+    color: #0f172a;
+    background-color: #f1f5f9;
+}
+
+/* الكارت الأساسي الأبيض */
+.profile-sheet-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+/* منطقة الهوية العليا */
+.profile-header-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* أفاتار مربع بزوايا دائرية خفيفة مثل المنصات الاحترافية */
+.profile-avatar-square {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.profile-main-meta {
+    flex: 1;
+}
+
+.profile-title-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+/* خط الاسم كبير وواضح وبلون داكن فخم */
+.profile-title-row h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+    letter-spacing: -0.3px;
+}
+
+/* البادج الخاص بالحالة */
+.status-pill {
+    display: inline-flex;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.status-pill.en\ cours {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+
+.status-pill.accepted, .status-pill.accepté {
+    background-color: #f0fdf4;
+    color: #16a34a;
+}
+
+.status-pill.rejected {
+    background-color: #fef2f2;
+    color: #dc2626;
+}
+
+/* نصوص الميتا الفرعية */
+.profile-sub-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.meta-badge stroke {
+    color: #94a3b8;
+}
+
+/* الـ Grid لتقسيم محتوى الصفحة */
+.profile-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 48px;
+    padding: 32px 0;
+}
+
+/* عناوين الأقسام الداخلية */
+.panel-section-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+/* أسطر عرض البيانات للمعلومات الشخصية */
+.data-display-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.data-icon-wrapper {
+    color: #64748b;
+    background-color: #f8fafc;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f1f5f9;
+}
+
+.data-text-group label {
+    display: block;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.data-text-group p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+/* البلوكات الخاصة بالعمود الأيمن */
+.profile-experience-column {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.box-header-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.box-header-title h3, .skills-detail-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: #0f172a;
+}
+
+.experience-paragraph {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #334155;
+    margin: 0;
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
+}
+
+.skills-detail-box {
+    margin-top: 24px;
+}
+
+.skills-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+/* كبسولات المهارات بدون تلوين زائد */
+.pill-skill-tag {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
+
+/* الفوتر السفلي للأزرار */
+.profile-footer-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 24px;
+    margin-top: 16px;
+}
+
+/* الأزرار الاحترافية الأساسية */
+.btn-action-outline, .btn-action-solid {
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: 1px solid transparent;
+}
+
+/* زر الرفض النظيف والكلاسيكي */
+.btn-reject {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    color: #64748b;
+}
+
+.btn-reject:hover:not(:disabled) {
+    background-color: #fef2f2;
+    border-color: #fecaa7;
+    color: #dc2626;
+}
+
+/* زر القبول ذو اللون الكحلي الفخم الممتص من ثيم الموقع */
+.btn-accept {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.btn-accept:hover:not(:disabled) {
+    background-color: #1e293b;
+}
+
+/* وضعية التعطيل عند التحديث التلقائي */
+.btn-action-outline:disabled, .btn-action-solid:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* الـ Media Query لشاشات الـ 768px */
+@media (max-width: 786px) {
+    .profile-sheet-card {
+        padding: 24px;
+    }
+    .profile-header-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-title-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .profile-sub-badges {
+        justify-content: center;
+        gap: 12px;
+    }
+    .profile-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .profile-footer-actions {
+        flex-direction: column;
+    }
+    .btn-action-outline, .btn-action-solid {
+        width: 100%;
+        text-align: center;
+    }
+}
