@@ -38,7 +38,7 @@ const Employers = () => {
 
  
   const fetchDemandes = () => {
-    axios.get('http://localhost:5000/demande/all')
+    axios.get('https://jobmatch-tau.vercel.app/demande/all')
       .then(res => {
         setDemandes(res.data);
         setLoading(false);

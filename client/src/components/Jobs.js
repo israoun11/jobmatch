@@ -74,7 +74,7 @@ const Jobs = () => {
       };
 
       
-      const response = await axios.post('http://localhost:5000/offre/add', formattedData);
+      const response = await axios.post('https://jobmatch-tau.vercel.app/offre/add', formattedData);
 
       if (response.status === 201 || response.status === 200) {
         alert('Job Offer added successfully to Database!');

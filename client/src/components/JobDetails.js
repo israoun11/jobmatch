@@ -23,7 +23,7 @@ const JobDetails = () => {
             setLoading(false);
         } else {
             
-            axios.get(`http://localhost:5000/offre/${id}`)
+            axios.get(`https://jobmatch-tau.vercel.app/offre/${id}`)
                 .then((res) => {
                     setJob(res.data);
                     setLoading(false);
