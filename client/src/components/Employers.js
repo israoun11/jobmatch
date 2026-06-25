@@ -160,7 +160,7 @@ const Employers = () => {
                 className="candidate-pro-card"
                 onClick={() => {
                   
-                    navigate('/employer/candidate/' + demande._id, { state: { demande, avatarColors: userColor } });
+                    navigate('/employer/candidate/' + demande._id, { state: { demande, avatarColors: "blue" } });
                 }}
               >
                 <div className="pro-tooltip">
@@ -185,7 +185,7 @@ const Employers = () => {
                   
                     const firstLetter = demande.nameuser ? demande.nameuser.charAt(0).toUpperCase() : 'A';
                     return (
-                        <div className="pro-avatar-circle" style={{ backgroundColor: userColor}}>
+                        <div className="pro-avatar-circle" style={{ backgroundColor: "blue"}}>
                             {firstLetter}
                         </div>
                     );
