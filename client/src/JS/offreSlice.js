@@ -7,7 +7,7 @@ export const fetchOffres = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       // عوّض الـ URL هذا بالـ URL الصحيح متاع الـ API عندك في الـ Back
-      const response = await axios.get('http://localhost:5000/offre/all'); 
+      const response = await axios.get('https://jobmatch-tau.vercel.app/offre/all'); 
       return response.data; // الـ data هوني هي الـ Array متاع الـ offres اللي صبيتها في Postman
     } catch (error) {
       return rejectWithValue(error.response.data);
