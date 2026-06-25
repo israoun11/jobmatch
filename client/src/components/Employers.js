@@ -93,8 +93,8 @@ const Employers = () => {
   const pendingApps = demandes.filter(d => d.status === 'en cours').length;
   const acceptedApps = demandes.filter(d => d.status === 'accepted' || d.status === 'accepté').length;
 
-  const avatarColors = [ "#ec4899", "#3b82f6","#a855f7", "#6366f1", "#f43f5e"
-  ];
+  
+
 
   if (loading) {
     return (
