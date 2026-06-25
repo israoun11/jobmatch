@@ -20,13 +20,17 @@ import CareerTips from './components/CareerTips';
 function App() {
 
   const dispatch = useDispatch();
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  };
   useEffect(() => {
     dispatch(userCurrent());
   });
   return (
       <div className="App">
         
-        <Navbarr />
+        <Navbarr isOpen={isOpen} toggleMenu={toggleMenu}/>
 
         
         <div className="main-content">
