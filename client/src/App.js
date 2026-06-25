@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import Profil from './components/Profil';
-import PrivateRouter from './Routes/PrivateRouter';
+
 import { userCurrent } from './JS/userSlice/userSlice';
 import Footer from './components/Footer';
 import Jobs from './components/Jobs';
@@ -18,7 +18,7 @@ import CandidatesList from './components/CandidatesList';
 import CareerTips from './components/CareerTips';
 
 function App() {
-  const isAuth = localStorage.getItem("token");
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(userCurrent());

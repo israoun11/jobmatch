@@ -18,7 +18,7 @@ const CareerTips = () => {
             <button className="btn-primary">Start Improving Today</button>
           </div>
           <div className="hero-image animate-float">
-            <img src='https://static.vecteezy.com/system/resources/previews/047/633/108/non_2x/realistic-office-moments-illustration-concepts-vector.jpg' width={550}/>
+            <img alt="error" src='https://static.vecteezy.com/system/resources/previews/047/633/108/non_2x/realistic-office-moments-illustration-concepts-vector.jpg' width={550}/>
           </div>
         </div>
       </header>

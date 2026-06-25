@@ -153,13 +153,13 @@ const Employers = () => {
         {/* Grid Area */}
         <div className="candidates-grid">
           {demandes.map((demande, index) => {
-            const userColor = avatarColors[index % avatarColors.length];
+          
             return (
               <div 
                 key={demande._id} 
                 className="candidate-pro-card"
                 onClick={() => {
-                    const userColor = avatarColors[index % avatarColors.length];
+                  
                     navigate('/employer/candidate/' + demande._id, { state: { demande, avatarColors: userColor } });
                 }}
               >
@@ -182,7 +182,7 @@ const Employers = () => {
 
                 <div className="candidate-core">
                   {(() =>{
-                    const userColor = avatarColors[index % avatarColors.length];
+                  
                     const firstLetter = demande.nameuser ? demande.nameuser.charAt(0).toUpperCase() : 'A';
                     return (
                         <div className="pro-avatar-circle" style={{ backgroundColor: userColor}}>

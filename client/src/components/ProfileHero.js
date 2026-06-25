@@ -22,7 +22,7 @@ const ProfileHero = () => {
               <div className="notification-box">
                 <div className="bell-icon-wrapper">
                   <span className="bell-badge"></span>
-                  <img src="https://img.icons8.com/?size=100&id=ctT3iPlvlrxa&format=png&color=000000" width={50}/>
+                  <img  alt="error" src="https://img.icons8.com/?size=100&id=ctT3iPlvlrxa&format=png&color=000000" width={50}/>
                 </div>
                 <div className="notification-text">
                   <h4>New Interview</h4>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, MapPin, Briefcase } from 'lucide-react';
+import { MapPin, Briefcase } from 'lucide-react';
 import AboutJobs from './AboutJobs';
 import ProfileHero from './ProfileHero';
 import JobCategories from './JobCategories';
@@ -95,7 +95,7 @@ const Home = () => {
           <div className="hero-right-image-area">
             <div className="image-uploader-placeholder">
               <div className="placeholder-text-center">
-                <img className='people'
+                <img alt="error" className='people'
                  src="https://media.licdn.com/dms/image/v2/D4D12AQGzjqw2k7iOpA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699283992609?e=2147483647&v=beta&t=WN0cq2NNenXXD6GFWiYOaXoI6b14OwudQG2sHkn-Fpw"/>
                 
                 
